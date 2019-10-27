@@ -53,6 +53,7 @@ $sudo pacman-key --populate archlinux manjaro
 $sudo pacman-key --refresh-keys
 $sudo pacman -S $(pacman -Qenq) #此命令由チェン提供
 $sudo pacman -S linux linux-headers --force #把内核换成arch提供
+$sudo pacman -S pacman-mirrorlist #直接选择卸载pacman-mirrors
 ```
 
 如果重启后没事，你就偷着乐吧～
@@ -63,3 +64,13 @@ $sudo pacman -S linux linux-headers --force #把内核换成arch提供
 　　其实安装archlinux，用不着完全像ArchWiki教程那样一步一步完全自己配置。某位知乎网友提到，可以将配置比较类似的电脑上的archlinux通过备份还原软件复制到自己的电脑上，再经过一些很简单的配置流程即可。
 
 　　不过，按照Arch wiki安装系统，你可以更深入地了解Linux的系统构成，也可以在解决问题中找到普遍方法。~~貌似Arch用户们更倾向于把这看成是一种挑战，完成安装来证明自己有能力加入大邪～，如同原始部落规定让一定年龄的男孩去野外打一头狼来作为自己已经成年的标志？那我的这个行为该怎么定义？！~~也许这正是arch的精神所在？好吧，等我下次有时间了再折腾。
+  
+# 一点补充
+   根据网友的反馈，在操作后出现“syntax：/etc/pacman.conf“之类的字样，只需要编辑pacman.conf，注释掉”syncfirst“一行即可。
+   
+   还有一个自己遇到的问题，就是发现无法更新linux内核，screenfetch始终显示manjaro字样。可以先删掉/boot/initramfs-linux.img,initramfs-linux-fallback.img,vmlinuz-linux三个文件，然后
+```
+$sudo pacman -S linux
+$sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+   重启就好了。
