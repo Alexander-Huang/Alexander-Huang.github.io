@@ -66,11 +66,26 @@ $sudo pacman -S pacman-mirrorlist #直接选择卸载pacman-mirrors
 　　不过，按照Arch wiki安装系统，你可以更深入地了解Linux的系统构成，也可以在解决问题中找到普遍方法。~~貌似Arch用户们更倾向于把这看成是一种挑战，完成安装来证明自己有能力加入大邪～，如同原始部落规定让一定年龄的男孩去野外打一头狼来作为自己已经成年的标志？那我的这个行为该怎么定义？！~~也许这正是arch的精神所在？好吧，等我下次有时间了再折腾。
   
 # 一点补充
-   根据网友的反馈，在操作后出现“syntax：/etc/pacman.conf“之类的字样，只需要编辑pacman.conf，注释掉”syncfirst“一行即可。
+1.根据网友的反馈，在操作后出现“syntax：/etc/pacman.conf“之类的字样，只需要编辑pacman.conf，注释掉”syncfirst“一行即可。
    
-   还有一个自己遇到的问题，就是发现无法更新linux内核，screenfetch始终显示manjaro字样。可以先删掉/boot/initramfs-linux.img,initramfs-linux-fallback.img,vmlinuz-linux三个文件，然后
+2.还有一个自己遇到的问题，就是发现无法更新linux内核，screenfetch始终显示manjaro字样。可以先删掉/boot/initramfs-linux.img,initramfs-linux-fallback.img,vmlinuz-linux三个文件，然后
 ```
 $sudo pacman -S linux
 $sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
    重启就好了。
+   
+ 3.在2019年10月某日推送的pacman更新包中，去除了--force(或者是-f)选项，官方给出的原因是大量用户升级时误用--force导致滚挂。所以现在以上方法仅对manjaro 18.10正式版及以前的版本有效。18.10正式版会提示“不推荐--force”。因此，如需使用以上方法，请直接安装18.10版本，然后不升级直接执行以上操作。更新
+ 
+ 4.如果执行过程中遇到任何软件包不符合依赖关系，请大胆卸载。特别是pamac-cli,pamac-gtk-pamac-common,manjaro-system-utility等包。在变成arch后如需继续使用图形化包管理器pamac-gtk，可以从aur获取。
+ ```
+$yay -S pamac-aur
+```
+5.其实我并未按照以上处理，我是先换arch源然后
+ ```
+$sudo pacman -Syyu --force
+$sudo pacman -S linux
+$sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+现在暂未发现其他问题。如果发现问题，欢迎在以下评论区或者酷安反馈。
