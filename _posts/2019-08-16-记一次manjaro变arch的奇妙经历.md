@@ -1,10 +1,10 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
 title:      记一次manjaro变arch的奇妙经历 
-subtitle:   或将成为安装archlinux最简单的方法?
+subtitle:   已经引起教主的极度不满（持续更新中）
 date:       2019-08-16 				# 时间
 author:     Alex 						# 作者
-header-img: img/ai-seahouse.jpg 	#这篇文章标题背景图片
+header-img: img/ai-newheadpic.png 	#这篇文章标题背景图片
 catalog: true 						# 是否归档
 tags:								#标签
     - Linux
