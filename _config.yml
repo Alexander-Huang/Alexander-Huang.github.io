@@ -74,11 +74,11 @@ gitalk:
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: b50bf2b12b5338a1845e33832976fd68
+#ba_track_id: b50bf2b12b5338a1845e33832976fd68
 
 # Google Analytics
-ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
-ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+#ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
+#ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 
@@ -102,17 +102,17 @@ friends: [
         title: "我的酷安",
         href: "http://www.coolapk.com/u/1340820"
     },{
-        title: "Eros_0125",
-        href: "http://orz.dog"
+        title: "生来彷徨的人（Linux铺路组重要成员）",
+        href: "https://codesjobs.github.io/"
+    },{
+        title: "kiriki(ROM大佬)",
+        href: "https://blog.kiriki.top"
     },{
         title: "チェン(arch大佬)",
         href: "http://blog.origincode.me"
     },{
         title: "OnlyLoveFree(termux大佬)",
         href: "https://nidhoggfgg.github.io"
-    },{
-        title: "kiriki(ROM大佬)",
-        href: "https://blog.kiriki.top"
     },{
         title: "pgs666",
         href: "http://pgs666.kdcloud.xyz"
@@ -125,9 +125,6 @@ friends: [
     },{
         title: "fear0818(酷安id过于高大上)",
         href: "https://fear0818.github.io/"
-    },{
-        title: "生来彷徨的人（Linux铺路组重要成员）",
-        href: "https://codesjobs.github.io/"
     },{
         title: "John’s blog",
         href: "https://celianlh.github.io"
