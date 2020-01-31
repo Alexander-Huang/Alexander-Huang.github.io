@@ -8,10 +8,11 @@ date:       2020-01-31 				# 时间
 author:     Alex 						# 作者    
 header-img: img/ai-rainwindow.jpg 	#这篇文章标题背景图片   
 catalog: true 						# 是否归档        
-tags:							     	#标签    
-​    - Linux    
-​    - 终端    
+tags:								#标签
+    - Linux
+    - 终端
 ---    
+
 
 
 > 这一切的一切都得从一只蝙蝠说起......
