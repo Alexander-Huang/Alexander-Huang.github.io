@@ -47,7 +47,7 @@ $sudo vim /etc/pacman.conf
 ```
 $sudo pacman -S $(pacman -Qenq)
 $sudo pacman -Syyu
-$sudo pacman -S linux linux-headers --force #把内核换成arch提供
+$sudo pacman -S linux linux-headers  #把内核换成arch提供
 $sudo pacman -S pacman-mirrorlist #直接选择卸载pacman-mirrors
 ```
 
