@@ -18,7 +18,7 @@ tags:								#标签
 
 # 搞机过程
 
-**声明：使用以下方法造成的一切后果自行承担，一切问题自己上archwiki解决，不要找我**！
+**声明：以下方法并非正常操作，不保证不会出现问题，出现问题后可以在Google、archwiki等处寻找解决方案、或者询问各位大佬。因为使用以下方法导致损失请自行负责，本人不承担任何责任。使用者应具有基本的独立解决问题的能力！再次提醒：数据无价，请谨慎！**！
 
 首先在
 
@@ -30,20 +30,8 @@ tags:								#标签
 $sudo vim /etc/pacman.d/mirrorlist
 ```
 
-其实可以全删掉，就留清华源里面那个。然后致命操作
+其实可以全删掉，就留清华源里面那个。然后
 
-```
-$sudo pacman -Syyu --force
-```
-
-（如果你怕自己反悔，可以加一句“--noconfirm”哈哈）然后...重启试试会不会翻车
-
-如果重启后幸运地没有任何问题，那么继续操（zuo）作（si）：
-```
-$sudo vim /etc/pacman.conf
-```
-　　修改/etc/pacman.conf，将所有的SigLevel的等号右边通通改成Never。（安装本地软件包那个可不改）
-　　以下指令中，凡是提示不能满足依赖关系又不重要的，都暂时删了。如果被错误提示中止，先别忙着继续，Google一下为什么。
 ```
 $sudo pacman -S pacman #不知道是否需要？
 $sudo pacman -R manjaro-keyring
@@ -51,12 +39,33 @@ $sudo pacman -S archlinux-keyring archlinuxcn-keyring
 $sudo pacman-key --init
 $sudo pacman-key --populate archlinux manjaro
 $sudo pacman-key --refresh-keys
-$sudo pacman -S $(pacman -Qenq) #此命令由チェン提供
+$sudo vim /etc/pacman.conf
+```
+
+　　修改/etc/pacman.conf，将所有的SigLevel的等号右边通通改成Never。（安装本地软件包那个可不改）
+　　以下指令中，凡是提示不能满足依赖关系又不重要的，都暂时删了。如果被错误提示中止，先别忙着继续，Google一下为什么。
+```
+$sudo pacman -S $(pacman -Qenq)
+$sudo pacman -Syyu
 $sudo pacman -S linux linux-headers --force #把内核换成arch提供
 $sudo pacman -S pacman-mirrorlist #直接选择卸载pacman-mirrors
 ```
 
 如果重启后没事，你就偷着乐吧～
+
+**备选方案**：如果以上方案行不通，可以将
+```
+$sudo pacman -S $(pacman -Qenq)
+$sudo pacman -Syyu
+```
+替换为
+```
+$sudo pacman -Syyu --overwrite '*' #没有尝试过...
+```
+为了减小滚挂的概率，在之后仍然*推荐*执行
+```
+$sudo pacman -S $(pacman -Qenq)
+```
 
 # 后记
 　　我使用的是manjaro18.04，安装后通过滚动更新到最新版本，不保证每个版本的manjaro都可以成功，也不保证此方法一直有效。即使你成功了，也有可能会在以后的某次滚动更新中滚挂。~~这不是arch的特性吗？~~如果你们有更稳妥的方法，欢迎分享。
@@ -75,17 +84,11 @@ $sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
    重启就好了。
    
- 3.在2019年10月某日推送的pacman更新包中，去除了--force(或者是-f)选项，官方给出的原因是大量用户升级时误用--force导致滚挂。所以现在以上方法仅对manjaro 18.10正式版及以前的版本有效。18.10正式版会提示“不推荐--force”。因此，如需使用以上方法，请直接安装18.10版本，然后不升级直接执行以上操作。更新
- 
- 4.如果执行过程中遇到任何软件包不符合依赖关系，请大胆卸载。特别是pamac-cli,pamac-gtk-pamac-common,manjaro-system-utility等包。在变成arch后如需继续使用图形化包管理器pamac-gtk，可以从aur获取。
+
+3.如果执行过程中遇到任何软件包不符合依赖关系，请大胆卸载。特别是pamac-cli,pamac-gtk-pamac-common,manjaro-system-utility等包。在变成arch后如需继续使用图形化包管理器pamac-gtk，可以从aur获取。
  ```
 $yay -S pamac-aur
 ```
-5.其实我并未按照以上处理，我是先换arch源然后
- ```
-$sudo pacman -Syyu --force
-$sudo pacman -S linux
-$sudo grub-mkconfig -o /boot/grub/grub.cfg
-```
+4.本人极度diss某些认为Archlinux用户高人一等的思想。你可以认为“arch用户比manjaro用户更厉害”，这是无可厚非的，可是你不能歧视manjaro用户。我承认Manjaro有许多亟待完善的地方，但不能因此否定manjaro官方团队和社区的努力。如果你对manjaro有一些合理意见，我可以帮你转达manjaro的开发者们。（我在manjaro英文tg群）
 
-现在暂未发现其他问题。如果发现问题，欢迎在以下评论区或者酷安反馈。
+**最近更新于2020年1月30日21：00**，如果发现问题，欢迎在以下评论区或者酷安反馈。
