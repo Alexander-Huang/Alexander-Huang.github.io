@@ -1,17 +1,15 @@
-
-
 ---
-layout:     post   				    # 使用的布局（不需要改）  
-title:      用chroot在已有linux下运行manjaro系统    
-subtitle:   适用于archlinux和manjaro    
-date:       2020-01-31 				# 时间    
-author:     Alex 						# 作者    
-header-img: img/ai-rainwindow.jpg 	#这篇文章标题背景图片   
-catalog: true 						# 是否归档        
+layout:     post   				    # 使用的布局（不需要改）
+title:      用chroot在已有linux下运行manjaro系统 
+subtitle:   仅限于archlinux和manjaro
+date:       2020-01-31 				# 时间
+author:     Alex 						# 作者
+header-img: img/ai-rainwindow.jpg 	#这篇文章标题背景图片
+catalog: true 						# 是否归档
 tags:								#标签
     - Linux
     - 终端
----    
+---
 
 
 
