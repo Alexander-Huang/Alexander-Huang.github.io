@@ -1,6 +1,6 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
-title:      用chroot在已有linux下运行manjaro系统 
+title:      用chroot在已有linux下运行manjaro 
 subtitle:   仅限于archlinux和manjaro
 date:       2020-01-31 				# 时间
 author:     Alex 						# 作者
