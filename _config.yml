@@ -62,8 +62,8 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: dfc79a73954da66d3787                            #生成的clientID
-  clientSecret: 4ef0bb0960e2548ecc856f47fb3fb12eaf967cfa    #生成的clientSecret
+  clientID: unknown                            #生成的clientID
+  clientSecret: unknow   #生成的clientSecret
   repo: Alexander-Huang.github.io    #仓库名称
   owner: Alexander-Huang    #github用户名
   admin: Alexander-Huang
