@@ -62,8 +62,8 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: unknown                            #生成的clientID
-  clientSecret: unknow   #生成的clientSecret
+  clientID: dfc79a73954da66d3787                            #生成的clientID
+  clientSecret: 4ef0bb0960e2548ecc856f47fb3fb12eaf967cfa    #生成的clientSecret
   repo: Alexander-Huang.github.io    #仓库名称
   owner: Alexander-Huang    #github用户名
   admin: Alexander-Huang
@@ -99,11 +99,8 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "我的酷安",
-        href: "http://www.coolapk.com/u/1340820"
-    },{
         title: "生来彷徨的人（Linux铺路组重要成员）",
-        href: "https://codedreamz.github.io/"
+        href: "https://voiddreamz.ml/"
     },{
         title: "kiriki(ROM大佬)",
         href: "https://blog.kiriki.top"
