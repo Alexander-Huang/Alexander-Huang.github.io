@@ -37,7 +37,7 @@ $sudo pacman -S pacman #不知道是否需要？
 $sudo pacman -R manjaro-keyring
 $sudo pacman -S archlinux-keyring archlinuxcn-keyring
 $sudo pacman-key --init
-$sudo pacman-key --populate archlinux manjaro
+$sudo pacman-key --populate archlinux
 $sudo pacman-key --refresh-keys
 $sudo vim /etc/pacman.conf
 ```
@@ -91,4 +91,4 @@ $yay -S pamac-aur
 ```
 4.本人极度diss某些认为Archlinux用户高人一等的思想。你可以认为“arch用户比manjaro用户更厉害”，这是无可厚非的，可是你不能歧视manjaro用户。我承认Manjaro有许多亟待完善的地方，但不能因此否定manjaro官方团队和社区的努力。如果你对manjaro有一些合理意见，我可以帮你转达manjaro的开发者们。（我在manjaro英文tg群）
 
-**最近更新于2020年1月30日21：00**，如果发现问题，欢迎在以下评论区或者酷安反馈。
+**最近更新于2020年2月20日21：35**，如果发现问题，欢迎在以下评论区或者酷安反馈。
