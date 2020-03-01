@@ -4,7 +4,7 @@ title:      atom和github协同管理pages
 subtitle:   这才领会到了“21st editor”的强大
 date:       2020-03-01 				# 时间
 author:     Alex 						# 作者
-header-img: img/ai-newheadpic.png 	#这篇文章标题背景图片
+header-img: img/ai-dreamarea.jpg 	#这篇文章标题背景图片
 catalog: true 						# 是否归档
 tags:								#标签
     - GitHub
