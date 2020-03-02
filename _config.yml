@@ -99,11 +99,14 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "生来彷徨的人（Linux铺路组重要成员）",
+        title: "生来彷徨的人（Linux铺路组）",
         href: "https://voiddreamz.ml/"
     },{
-        title: "Oganesson",
+        title: "Oganesson（Linux铺路组）",
         href: "https://oganesson0512.github.io"
+    },{
+        title: "啦哆咪（Linux铺路组）",
+        href: "https://lado.me"
     },{
         title: "kiriki(ROM大佬)",
         href: "https://blog.kiriki.top"
