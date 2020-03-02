@@ -39,6 +39,7 @@ $apm config set registry http://registry.npm.taobao.org #换了国内源还是�
 $apm search chinese #搜索中文语言支持
 $apm install simplified-chinese-menu #装Atom-simplified-chinese装不上...
 $apm install markdown-writer #提供完整的markdown支持，可以帮你省些事，也不用死记语法
+$apm install markdown-preview-enhanced #比起原生的markdown preview可以自动打开，自动滑动页面
 ```
 小提示：Atom里ctrl+shift+p可以查找并执行各种命令（比如打开设置，新建文件等等），而且部分命令的快捷键也会出现在查找结果的后面，很方便，不必每次去翻菜单。
 然后这个中文支持...只覆盖了菜单和设置。~~瞧不起中国人实锤了~~
