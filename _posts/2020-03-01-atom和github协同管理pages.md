@@ -38,7 +38,6 @@ GitHub是一个比酷安大很多的世界级的~~同性交友平台~~。介绍�
 $apm config set registry http://registry.npm.taobao.org #换了国内源还是慢    
 $apm search chinese #搜索中文语言支持
 $apm install simplified-chinese-menu #装Atom-simplified-chinese装不上...
-$apm install markdown-preview #提供markdown边写边预览的支持
 $apm install markdown-writer #提供完整的markdown支持，可以帮你省些事，也不用死记语法
 ```
 小提示：Atom里ctrl+shift+p可以查找并执行各种命令（比如打开设置，新建文件等等），而且部分命令的快捷键也会出现在查找结果的后面，很方便，不必每次去翻菜单。
@@ -52,6 +51,7 @@ $ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 因为本人不那么注意安全，所以下面索要的一切内容直接一路回车一把梭。在意这个问题的看这里：[链接](https://help.github.com/cn/github/authenticating-to-github/working-with-ssh-key-passphrases)   
 生成之后，在~/.ssh/id_rsa.pub领取你的密钥，并将它填入GitHub>（右上角）>Settings>SSH and GPG keys>New SSH key，备注随便填。密钥应该长这样：    
 `ssh-rsa O-oooooooooo AAAAE-A-A-I-A-U- JO-oooooooooooo AAE-O-A-A-U-U-A- E-eee-ee-eee AAAAE-A-E-I-E-A- JO-ooo-oo-oo-oo EEEEO-A-AAA-AAAA Youremail@emailaddress.com`    
+![3RPtQf.jpg](https://s2.ax1x.com/2020/03/02/3RPtQf.jpg)
 然后开始clone你的pages repo到本地：
 ```
 $ git clone git@github.com:your_account/your_pages.github.io.git
@@ -65,13 +65,16 @@ $ git clone git@github.com:your_account/your_pages.github.io.git
 现在我们来试试配置成功了没：    
 1. 让鼠标指针靠近左边框，点击出现的箭头拉出project文件列表，    
 2. 在你的pages项目下随便找一个文件夹右键new file，取名test.md;    
-3. 在刚刚的位置toggle git tab，点击unstaged changes右边的stage all，    
-4. 在commit文本框中随便输入一些信息，点击commit to master，   
-5. 在右下角点击push，   
-6. 稍等片刻，在浏览器中打开你的pages的repo页，看看有没有更新。
+3. 写下# test，**保存**；
+4. 在刚刚的位置toggle git tab，点击unstaged changes右边的stage all，    
+5. 在commit文本框中随便输入一些信息，点击commit to master，   
+6. 在右下角点击push，   
+7. 稍等片刻，在浏览器中打开你的pages的repo页，看看有没有更新。
+![3RPhTJ.png](https://s2.ax1x.com/2020/03/02/3RPhTJ.png)
 
 如果有，恭喜，你成功了！
 ### 后续配置
 ctrl+,呼出设置，扩展>markdown writer中修改设置使之更符合你的习惯以及你的pages的规范。
 ## 完成！
 然后也许你可以用这个写一篇blog来庆祝一下？
+![3RCebQ.png](https://s2.ax1x.com/2020/03/02/3RCebQ.png)
