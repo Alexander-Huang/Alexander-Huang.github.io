@@ -1,6 +1,6 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
-title:      记一次manjaro变arch的奇妙经历 
+title:      记一次manjaro变arch的奇妙经历
 subtitle:   已经引起教主的极度不满（持续更新中）
 date:       2019-08-16 				# 时间
 author:     Alex 						# 作者
@@ -73,22 +73,23 @@ $sudo pacman -S $(pacman -Qenq)
 　　其实安装archlinux，用不着完全像ArchWiki教程那样一步一步完全自己配置。某位知乎网友提到，可以将配置比较类似的电脑上的archlinux通过备份还原软件复制到自己的电脑上，再经过一些很简单的配置流程即可。
 
 　　不过，按照Arch wiki安装系统，你可以更深入地了解Linux的系统构成，也可以在解决问题中找到普遍方法。~~貌似Arch用户们更倾向于把这看成是一种挑战，完成安装来证明自己有能力加入大邪～，如同原始部落规定让一定年龄的男孩去野外打一头狼来作为自己已经成年的标志？那我的这个行为该怎么定义？！~~也许这正是arch的精神所在？好吧，等我下次有时间了再折腾。
-  
+
 # 一点补充
 1.根据网友的反馈，在操作后出现“syntax：/etc/pacman.conf“之类的字样，只需要编辑pacman.conf，注释掉”syncfirst“一行即可。
-   
+
 2.还有一个自己遇到的问题，就是发现无法更新linux内核，screenfetch始终显示manjaro字样。可以先删掉/boot/initramfs-linux.img,initramfs-linux-fallback.img,vmlinuz-linux三个文件，然后
 ```
 $sudo pacman -S linux
 $sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
    重启就好了。
-   
+
 
 3.如果执行过程中遇到任何软件包不符合依赖关系，请大胆卸载。特别是pamac-cli,pamac-gtk-pamac-common,manjaro-system-utility等包。在变成arch后如需继续使用图形化包管理器pamac-gtk，可以从aur获取。
  ```
 $yay -S pamac-aur
 ```
-4.本人极度diss某些认为Archlinux用户高人一等的思想。你可以认为“arch用户比manjaro用户更厉害”，这是无可厚非的，可是你不能歧视manjaro用户。我承认Manjaro有许多亟待完善的地方，但不能因此否定manjaro官方团队和社区的努力。如果你对manjaro有一些合理意见，我可以帮你转达manjaro的开发者们。（我在manjaro英文tg群）
+4.本人极度diss某些认为Archlinux用户高人一等的思想。你可以认为“arch用户比manjaro用户更厉害”，这是无可厚非的，可是你不能歧视manjaro用户。我承认Manjaro有许多亟待完善的地方，但不能因此否定manjaro官方团队和社区的努力。如果你对manjaro有一些合理意见，我可以帮你转达manjaro的开发者们。（我在manjaro英文tg群）    
+5.听说还有一个arcolinux，非常像archlinux哦~~（疯狂暗示）~~
 
 **最近更新于2020年2月20日21：35**，如果发现问题，欢迎在以下评论区或者酷安反馈。
