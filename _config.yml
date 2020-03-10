@@ -2,7 +2,7 @@
 title: Alex Blog
 SEOTitle: 我的博客 | Alex Blog
 header-img: img/ai-newnewnew.jpg
-email: 2380087797@qq.com
+email: alexanderhuang@foxmail.com
 description: "."
 keyword: "Alex, Alex Blog, Linux, Arch, 酷安, 软件, android"
 url: "https://alexander-huang.github.io"          # your host, for absolute URL
@@ -91,7 +91,7 @@ featured-condition-size: 1              # 相同标签数量大于这个数，�
 
 
 # Progressive Web Apps
-chrome-tab-theme-color: "#000000"
+chrome-tab-theme-color: "#240821"
 service-worker: true
 
 
