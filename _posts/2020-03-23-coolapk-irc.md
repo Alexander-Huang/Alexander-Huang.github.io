@@ -1,7 +1,7 @@
 ---
 layout: post
 title: coolapk irc
-subtitle: default    #副标题
+subtitle: 酷安网友的irc group    #副标题
 date:  2020-03-23
 author:   Alex
 header-img: img/ai-coolapk-irc.jpg   #背景图片
@@ -17,3 +17,4 @@ tags:              #标签
 - 不**太**允许ghs。
 - 请尽量避免争执。
 - 不要试图迫害群主。
+yes
