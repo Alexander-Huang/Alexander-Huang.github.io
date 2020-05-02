@@ -90,7 +90,7 @@ $sudo grub-mkconfig -o /boot/grub/grub.cfg
 $yay -S pamac-aur
 ```
 4.本人极度diss某些认为Archlinux用户高人一等的思想。你可以认为“arch用户比manjaro用户更厉害”，这是无可厚非的，可是你不能歧视manjaro用户。我承认Manjaro有许多亟待完善的地方，但不能因此否定manjaro官方团队和社区的努力。如果你对manjaro有一些合理意见，我可以帮你转达manjaro的开发者们。（我在manjaro英文tg群）    
-5.听说还有一个arcolinux，非常像archlinux哦~~（疯狂暗示）~~
+5.听说还有一个arcolinux，非常像archlinux哦~~（疯狂暗示）~~   
 6.这个帖子不会再继续更新了。需要使用类似方法的可以了解一下endeavour os，只需要修改/usr/lib/os-release和/etc/lsb-release即可。
 
 7.猜猜我发现了什么
